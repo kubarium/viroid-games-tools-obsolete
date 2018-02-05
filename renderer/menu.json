@@ -1,0 +1,77 @@
+[{
+    "label": "Viroid Games Tools",
+    "url": "/"
+  },
+  {
+    "separator": true
+  },
+  {
+    "label": "Name Generators",
+    "icon": "fa-flask",
+    "items": [{
+        "label": "Geography Names",
+        "items": [{
+            "label": "Urban",
+            "url": "/urban-name-generator"
+          },
+          {
+            "label": "River"
+          },
+          {
+            "label": "Island"
+          },
+          {
+            "label": "Continent"
+          },
+          {
+            "label": "Valley"
+          }
+        ]
+      },
+      {
+        "label": "Ship Names",
+        "url": "/ship-name-generator"
+      },
+      {
+        "label": "Tavern Names",
+        "url": "/tavern-name-generator"
+      },
+      {
+        "label": "Inn Names",
+        "url": "/inn-name-generator"
+      },
+      {
+        "label": "Person Names",
+        "url": "/person-name-generator"
+      },
+      {
+        "label": "Animal Names",
+        "url": "/animal-name-generator"
+      }
+    ]
+  },
+  {
+    "separator": true
+  },
+  {
+    "icon": "fa-flag",
+    "label": "Coat of Arms"
+  },
+  {
+    "separator": true
+  },
+  {
+    "icon": "fa-gem",
+    "label": "Treasure Generators"
+  },
+  {
+    "separator": true
+  },
+  {
+    "label": "Map Generators",
+    "icon": "fa-globe",
+    "items": [{
+      "label": "Fantasy Map Generator"
+    }]
+  }
+]
