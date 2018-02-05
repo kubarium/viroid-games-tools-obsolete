@@ -1,4 +1,5 @@
-const {app, BrowserWindow} = require('electron')
+const {app, Menu, BrowserWindow} = require('electron')
+const electron = require('electron')
 const path = require('path')
 const {format} = require('url')
 const prepareNext = require('electron-next')
@@ -12,10 +13,16 @@ let win
 async function createWindow() {
     await prepareNext('./renderer')
 
+
+    var displays = electron.screen.getAllDisplays()
+
     // Create the browser window.
     win = new BrowserWindow({
         width: 800,
-        height: 600
+        height: 600,
+        x: displays[1].bounds.x + 50,
+        y: displays[1].bounds.y + 50
+
     })
 
 
@@ -39,8 +46,14 @@ async function createWindow() {
         win = null
     })
 
+
+
     win.loadURL(url)
     win.maximize()
+
+    require('./menu')
+
+
 }
 
 // This method will be called when Electron has finished
