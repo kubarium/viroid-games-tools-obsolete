@@ -9,6 +9,9 @@
     "label": "Name Generators",
     "icon": "fa-flask",
     "items": [{
+        "label": "Borek"
+      },
+      {
         "label": "Geography Names",
         "items": [{
             "label": "Urban",

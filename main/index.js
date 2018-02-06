@@ -1,9 +1,9 @@
-const { app, Menu, BrowserWindow } = require("electron");
+const {app, Menu, BrowserWindow} = require("electron");
 const electron = require("electron");
 const path = require("path");
-const { format } = require("url");
+const {format} = require("url");
 const prepareNext = require("electron-next");
-const { resolve } = require("app-root-path");
+const {resolve} = require("app-root-path");
 const isDev = require("electron-is-dev");
 
 require("electron-reload")(__dirname);
