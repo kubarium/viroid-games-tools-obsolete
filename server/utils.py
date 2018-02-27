@@ -22,7 +22,7 @@ def filter_NNP(sentences):
 def readFile(file):
     tags = list()
 
-    with open(file, 'r', encoding="utf16") as f:
+    with open(file, 'r', encoding="utf8") as f:
         text = f.read()
     # with fileinput.input(files=(file), ) as book:
     #    for line in book:
