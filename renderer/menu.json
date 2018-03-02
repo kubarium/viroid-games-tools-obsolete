@@ -9,7 +9,11 @@
     "label": "Name Generators",
     "icon": "fa-flask",
     "items": [{
-        "label": "Borek"
+        "label": "Proper Noun Extractor",
+        "url": "/proper-noun-extractor"
+      }, {
+        "label": "Borek",
+        "url": "/borek"
       },
       {
         "label": "Geography Names",
