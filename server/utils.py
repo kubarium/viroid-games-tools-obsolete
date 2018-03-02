@@ -2,6 +2,7 @@ import fileinput
 import nltk
 import itertools
 
+
 def extract_entity_names(t):
     entity_names = []
 
@@ -14,9 +15,10 @@ def extract_entity_names(t):
 
     return entity_names
 
+
 def filter_NNP(sentences):
 
-    return [chunk for chunk in set(list(itertools.chain(*sentences))) if chunk[1] == "NNP"]
+    return [chunk[0] for chunk in set(list(itertools.chain(*sentences))) if chunk[1] == "NNP"]
 
 
 def readFile(file):
@@ -33,6 +35,5 @@ def readFile(file):
             sentence) for sentence in sentences]
         tagged_sentences = [nltk.pos_tag(sentence)
                             for sentence in tokenized_sentences]
-
 
         return filter_NNP(tagged_sentences)
