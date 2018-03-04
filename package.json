@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "app-root-path": "^2.0.1",
+    "brace": "^0.11.1",
     "classnames": "^2.2.5",
     "electron": "^1.7.12",
     "electron-builder": "^19.56.0",
@@ -10,6 +11,7 @@
     "next": "^5.0.0",
     "primereact": "^1.4.0",
     "react": "^16.2.0",
+    "react-ace": "^5.9.0",
     "react-dom": "^16.2.0",
     "redux": "^3.7.2"
   },
