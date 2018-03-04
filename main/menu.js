@@ -8,8 +8,8 @@ const template = [
         submenu: [
             {
                 label: 'Energize',
+                accelerator: 'CmdOrCtrl+R',
                 click(item) {
-
                     app.relaunch({
                         args: process.argv.slice(1).concat(['--relaunch'])
                     })
