@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { pathDeconstructor } from "../components/utils"
 import Layout from "../components/Layout"
 
+
 export default class extends Component {
   static async getInitialProps({req, pathname}) {
     return {
@@ -14,13 +15,25 @@ export default class extends Component {
 
     return (
       <Layout title={ pathDeconstructor(this.props.url.pathname) }>
-        <div>Do borek and cokelek</div>
+        <section>
+          <div>Do borek and cokelek</div>
+          <div>Do borek and cokelek</div>
+        </section>
         <style jsx>
           { `
-    div {
-        border:1px dashed blue;
-    }
-    ` }
+          section{
+            border:1px dashed red;
+            display:grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+          }
+          div {
+            border:1px dashed blue;
+            height: 100px;
+            width: 100px;
+          }
+
+          ` }
         </style>
       </Layout>
     )
