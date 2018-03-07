@@ -1,9 +1,9 @@
-const {app, Menu, BrowserWindow} = require("electron");
+const { app, Menu, BrowserWindow } = require("electron");
 const electron = require("electron");
 const path = require("path");
-const {format} = require("url");
+const { format } = require("url");
 const prepareNext = require("electron-next");
-const {resolve} = require("app-root-path");
+const { resolve } = require("app-root-path");
 const isDev = require("electron-is-dev");
 
 require("electron-reload")(__dirname);
@@ -16,13 +16,14 @@ async function createWindow() {
   await prepareNext("./renderer");
 
   var displays = electron.screen.getAllDisplays();
+  var display = displays[displays.length - 1];
 
   // Create the browser window.
   win = new BrowserWindow({
     width: 800,
     height: 600,
-    x: displays[1].bounds.x + 50,
-    y: displays[1].bounds.y + 50
+    x: display.bounds.x + 50,
+    y: display.bounds.y + 50
   });
 
   const devPath = "http://localhost:8000/index";
