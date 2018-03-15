@@ -3701,8 +3701,8 @@ pretty-bytes@^1.0.2:
     meow "^3.1.0"
 
 primereact@^1.4.0:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/primereact/-/primereact-1.4.1.tgz#0b49d41e4eb051efd41506e445969f94eef5802b"
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/primereact/-/primereact-1.5.0.tgz#4b75d622738573fa5b8130019ce57871246dc9ba"
 
 private@^0.1.6, private@^0.1.7:
   version "0.1.8"

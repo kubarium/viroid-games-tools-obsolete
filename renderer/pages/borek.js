@@ -1,17 +1,18 @@
-import React, { Component } from "react";
-import { pathDeconstructor } from "../components/utils";
-import Layout from "../components/Layout";
-import LetterSpinner from "../components/LetterSpinner";
-import { Provider } from "react-redux";
-import borekci from "../stores/borek";
-const store = borekci();
-//const store = borek.configureStore();
+import { Provider } from "react-redux"
+import React, { Component } from "react"
+
+import { pathDeconstructor } from "../components/utils"
+import borekStore from "../borek/borekStore"
+import Layout from "../components/Layout"
+import LetterSpinner from "../components/LetterSpinner"
+
+const store = borekStore()
 
 export default class extends Component {
   static async getInitialProps({ req, pathname }) {
     return {
       //title: title(pathname)
-    };
+    }
   }
 
   render() {
@@ -22,7 +23,7 @@ export default class extends Component {
             <LetterSpinner />
           </Provider>
           <div>Do borek and cokselek</div>
-          <div>Do borek and cokelek</div>
+          <div>Do borek and aa</div>
         </section>
         <style jsx>
           {`
@@ -40,6 +41,6 @@ export default class extends Component {
           `}
         </style>
       </Layout>
-    );
+    )
   }
 }

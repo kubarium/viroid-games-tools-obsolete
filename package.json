@@ -42,5 +42,6 @@
   "repository": "https://github.com/kubarium/viroid-games-tools.git",
   "author": "kubarium <iam@denizkumsal.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {}
 }
