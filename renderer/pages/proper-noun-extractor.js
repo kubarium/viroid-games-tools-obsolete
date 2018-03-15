@@ -1,9 +1,9 @@
-import 'brace/ext/language_tools';
+/* import 'brace/ext/language_tools';
 import 'brace/mode/markdown';
 import 'brace/snippets/markdown';
 import 'brace/theme/github';
 import AceEditor from 'react-ace';
-import brace from 'brace'
+import brace from 'brace' */
 import React, { Component } from 'react'
 
 import { lipsum } from '../static/lipsum'
@@ -26,7 +26,7 @@ export default class extends Component {
         return (
             <Layout title={ pathDeconstructor(this.props.url.pathname) }>
               <div>fuck sake</div>
-              <AceEditor mode="markdown" theme="github" onChange={ onChange } name="UNIQUE_ID_OF_DIV" editorProps={ { $blockScrolling: true } } value={ lipsum(5) } />
+              {/* <AceEditor mode="markdown" theme="github" onChange={ onChange } name="UNIQUE_ID_OF_DIV" editorProps={ { $blockScrolling: true } } value={ lipsum(5) } /> */}
               <style jsx>
                 { `
     div {
