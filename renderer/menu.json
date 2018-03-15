@@ -6,9 +6,51 @@
     "separator": true
   },
   {
+    "label": "Entity Generators",
+    "items": [{
+      "icon": "fa-home",
+      "label": "Village Generator",
+      "desc": "People names with the total population, their profession, lineage and wealth. Village's age and major historical events"
+    }, {
+      "icon": "fa-gem",
+      "label": "Treasure"
+    }, {
+      "icon": "fa-users",
+      "label": "Person"
+    }]
+  },
+  {
     "label": "Name Generators",
     "icon": "fa-flask",
     "items": [{
+        "icon": "fa-ship",
+        "label": "Ship Names",
+        "url": "/ship-name-generator"
+      },
+      {
+        "icon": "fa-beer",
+        "label": "Tavern Names",
+        "url": "/tavern-name-generator"
+      },
+      {
+        "icon": "fa-bed",
+        "label": "Inn Names",
+        "url": "/inn-name-generator"
+      },
+      {
+        "icon": "fa-users",
+        "label": "Person Names",
+        "url": "/person-name-generator"
+      },
+      {
+        "icon": "fa-paw",
+        "label": "Animal Names",
+        "url": "/animal-name-generator"
+      },
+      {
+        "separator": true
+      }, {
+
         "label": "Proper Noun Extractor",
         "url": "/proper-noun-extractor"
       }, {
@@ -32,28 +74,11 @@
           },
           {
             "label": "Valley"
+          },
+          {
+            "label": "Mountain"
           }
         ]
-      },
-      {
-        "label": "Ship Names",
-        "url": "/ship-name-generator"
-      },
-      {
-        "label": "Tavern Names",
-        "url": "/tavern-name-generator"
-      },
-      {
-        "label": "Inn Names",
-        "url": "/inn-name-generator"
-      },
-      {
-        "label": "Person Names",
-        "url": "/person-name-generator"
-      },
-      {
-        "label": "Animal Names",
-        "url": "/animal-name-generator"
       }
     ]
   },
@@ -63,13 +88,6 @@
   {
     "icon": "fa-flag",
     "label": "Coat of Arms"
-  },
-  {
-    "separator": true
-  },
-  {
-    "icon": "fa-gem",
-    "label": "Treasure Generators"
   },
   {
     "separator": true
