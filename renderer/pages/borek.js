@@ -5,8 +5,12 @@ import { pathDeconstructor } from "../components/utils"
 import borekStore from "../borek/borekStore"
 import Layout from "../components/Layout"
 import LetterSpinner from "../components/LetterSpinner"
+import { hot } from "react-hot-loader"
+import { createStore } from "redux"
+import reducers from "../borek/borekReducer"
 
-const store = borekStore()
+//const store = borekStore()
+const store = createStore(reducers)
 
 export default class extends Component {
   static async getInitialProps({ req, pathname }) {
@@ -23,7 +27,7 @@ export default class extends Component {
             <LetterSpinner />
           </Provider>
           <div>Do borek and cokselek</div>
-          <div>Do borek and aa</div>
+          <div>Do borek and zz</div>
         </section>
         <style jsx>
           {`

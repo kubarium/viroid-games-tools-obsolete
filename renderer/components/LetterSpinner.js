@@ -8,7 +8,12 @@ const mapDispatchToProps = {}
 
 class LetterSpinner extends Component {
   render() {
-    return <div>LetterSpinner {this.props.borek}</div>
+    return (
+      <div>
+        LetterSpinners {this.props.borekReducer.borek} fucked up {this.props.borek} this{" "}
+        {Object.keys(this.props.borekReducer)}
+      </div>
+    )
   }
 }
 

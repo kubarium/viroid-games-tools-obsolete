@@ -5,6 +5,7 @@ const { format } = require("url")
 const prepareNext = require("electron-next")
 const { resolve } = require("app-root-path")
 const isDev = require("electron-is-dev")
+const { enableLiveReload } = require("electron-compile")
 
 require("electron-reload")(__dirname)
 
@@ -34,7 +35,11 @@ async function createWindow() {
   })
 
   const url = isDev ? devPath : prodPath
-
+  /* 
+  if (isDev) {
+    enableLiveReload({ strategy: "react-hmr" })
+  }
+ */
   // Open the DevTools and React DevTools
   BrowserWindow.addDevToolsExtension(
     "/Users/kumsalo/Library/Application Support/Google/Chrome/" +

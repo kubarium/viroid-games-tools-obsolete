@@ -1,6 +1,6 @@
 const initState = {
-  borek: "sikisereasdsk ss",
-  am: 2235
+  borek: "aaa",
+  am: 2222
 }
 
 export default function(state = initState, action) {
